@@ -1,0 +1,289 @@
+@font-face{
+    font-family: "beyno";
+    src: url(../fonts/beyno/BEYNO.otf);
+  }
+  @font-face{
+    font-family: "wakanda";
+    src: url(../fonts/wakanda.ttf);
+}
+@font-face{
+  font-family: "Canterell";
+  font-weight: 100;
+  src: url(../fonts/Cantarell-Regular.ttf);
+}
+body{
+  background-image: url(../Plan_footer/arrière_plan.png);
+  
+}
+/* Design la partie header*/
+#partie-haut .marvel{
+    display: flex;
+    justify-content: space-around;
+    text-align: 0;
+    width: 100vw;
+    display: flex;
+    margin-top: 40px;
+  }
+  .Container_marv{
+    display: flex;
+    justify-content: center;
+  }
+  .Container_marv .marvel{
+    text-align: left;
+  }
+  .Container_marv .home{
+    text-align: right;
+  }
+  /* Navigateur */
+  nav ul{
+    list-style-type: none;
+    color: white;
+    display: flex;
+  }
+  nav li{
+    margin-right: 15px;
+  }
+  nav a{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+  }
+  #haut .lien nav{
+    display: flex;
+    list-style-type: initial;
+    font-family: "beyno";
+  }
+  #haut .nav li{
+    margin-right: 15px;
+  }
+  .nav-item {
+    font-family: beyno;
+}
+.nav-item.active {
+    text-decoration: underline;
+}
+
+.nav-item.active a {
+    color: var(--gris);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: beyno;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+    color: var(--gris);
+    text-decoration: underline;
+    transition: all 400ms ease-in-out;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--violet);
+    text-decoration: underline;
+    transition: all 400ms ease-in-out;
+}
+  /* Design la partie haut wakanda*/
+  #forever .content-forever{
+    position: relative;
+    width: 40%;
+    padding right: 30%;
+  }
+  #forever .accueil-wak{
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    padding: 50%;
+    margin-right: 0 auto;
+    height: 30%;
+
+  }
+  #forever .titre-for{
+    font-size: 40px;
+    font-family: "beyno";
+  }
+  #forever .sous-titre{
+    font-size: 30px;
+    font-family: "wakanda";
+  }
+  #forever .photo-wakanda{
+    position: absolute;
+    align-items: left;
+    margin-left: 20%;
+    padding: 2px;
+    width: 10%;
+  }
+  #forever .photo-wakand{
+    margin-left: 20%;
+    height: 56vw;
+  }
+  
+  /* Design la deuxieme section corps wakanda*/
+ #corps-text .titre{
+  font-family: "beyno";
+  font-size: 30px;
+ }
+ #cont-cinema .titre{
+  font-family: "beyno";
+  font-size: 30px;
+ }
+  
+  #corps-text .para{
+    background-color: #3D2DA6;
+    color: #FFFFFF;
+    justify-content: center;
+    font-size: 20px;
+    height: 200px;
+  }
+
+  .corps-wakanda{
+    display: flex;
+    justify-content: center;
+    
+  }
+  #corps-wakanda .container{
+    justify-content: 20%;
+    padding: 0;
+    margin-left: 5%;
+    margin: center;
+    height: 0 2px;
+  }
+  #culte-wakanda .titre{
+    font-family: "beyno";
+    font-size: 30px;
+  }
+  .Origin{
+    justify-content: left;
+    padding: 10px;
+    margin-left: 20vw;
+    height: 0 2px;
+  }
+  #culte-wakanda .titre{
+    font-family: "beyno";
+    font-size: 30px;
+  }
+  #heros-guerre .titre{
+    font-family: "beyno";
+    font-size: 30px;
+
+  }
+  #heros-force .titre{
+    font-family: "beyno";
+    font-size: 30px;
+  }
+  #contdoct .titre{
+    font-family: "beyno";
+    font-size: 30px;
+  }
+  
+  .text-corps{
+    justify-content: center;
+    font-size: 20px;
+    text-align: 60%;
+    margin-left: 20%;
+  }
+  .text-corps .trans{
+    justify-content: center;
+    text-align: right;
+    position: absolute;
+  }
+  /* Design de la deuxieme partie Corps enigme*/
+  .corps-a{
+    display: flex;
+    justify-content: center;
+  }
+  .corps-a .slide-enigme{
+    justify-content: center;
+    font-family: "wakanda";
+    font-size: 20px;
+  }
+  .corps-a .slide-enigme h2{
+    font-family: cantarell;
+    font-size: 20px;
+  }
+  .corps-a .text-enigme{
+    justify-content: center;
+    height: 80px;
+    margin: 40px;
+    width: 60%;
+  
+  }
+  /* Design la partie footer*/
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    position: absolute;
+    background: url(/assets/Plan_footer/back_footer.png);
+    background-size: 100% 100%;
+    background-position: center;
+      }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    background: url(../Plan_footer/back_footer.png);
+    background-size: 100% 100%;
+    background-position: center;
+    }
+      
+  #bas-footer{
+    width: 20vw;
+  }
+  .logo-mrl{
+    width: 50%;
+    position: absolute;
+   top: 10vw;
+   left: 5vw;
+    }
+      
+  .wakanadamarvel{
+    position: relative;
+    margin-right: 10vw;
+    width: 23.3vw;
+   height: 53vh;  
+    }
+  footer div{
+  margin-right: 10vw;
+    }
+  .media{
+  display: flex;
+  justify-content: center;
+  }
+  .footer-media ul{
+  font-family: Cantarell regular;
+  display: flex;
+  text-align: left;
+      }
+  .footer-media ul li {
+  margin-right: 40px;
+      }
+  .social-footer h2,.media h2, .media{
+  font-family: Cantarell regular;
+      }
+  .text-footer{
+    display: flex;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    padding: 20vh;
+    margin: center;
+      }
+  .social-footers{
+    justify-content: center;
+    line-height: 2px;
+  }
+  .social-item p{
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+    
+  
+  

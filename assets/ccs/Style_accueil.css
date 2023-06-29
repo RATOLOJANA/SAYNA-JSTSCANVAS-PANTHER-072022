@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@font-face{
+  font-family: "panthera";
+  src: url(../fonts/panthera.otf);
+}
+@font-face{
+  font-family: "beyno";
+  src: url(../fonts/beyno/BEYNO.ttf);
+}
+@font-face{
+  font-family: "beyno";
+  src: url(../fonts/beyno/BEYNO.otf);
+}
+@font-face{
+  font-family: "Cantarell";
+  src: url(../fonts/Cantarell-Bold.ttf);
+}
+/* Design la premiere partie header de la Black Panther */
+body{
+  background-image: url(/assets/Plan_footer/arrière_plan.png);
+  width: 100%;
+  
+}
+  #haut{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    display: flex;
+    margin-top: 20px;
+  }
+  /* Navigateur */
+  nav ul{
+    list-style-type: none;
+    color: white;
+    display: flex;
+  }
+  nav li{
+    margin-right: 15px;
+  }
+  nav a{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+  }
+  #haut .lien nav{
+    display: flex;
+    list-style-type: initial;
+    font-family: "beyno";
+  }
+  #haut .nav li{
+    margin-right: 15px;
+  }
+  .nav-item {
+    font-family: beyno;
+}
+.nav-item.active {
+    text-decoration: underline;
+}
+
+.nav-item.active a {
+    color: var(--gris);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: beyno;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+    color: var(--gris);
+    text-decoration: underline;
+    transition: all 400ms ease-in-out;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--violet);
+    text-decoration: underline;
+    transition: all 400ms ease-in-out;
+}
+
+  /*Design le partie bas black header*/
+.socios {
+    margin-left: 2em;
+    padding-top: 1em;
+    position: relative;
+    top: calc(var(--hauteurBar) - 11.4em);
+    z-index: 500;
+    display: block;
+}
+.socios .socios-item {
+    margin-block: 1em;
+}
+
+.socios .socios-item img:hover{
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
+
+.bar {
+    width: 3px;
+    background-color: #f2cef2;
+    height: var(--hauteurBar);
+    position: absolute;
+    left: 1.2em;
+}
+
+.bar::after {
+    content: "";
+    width: 3px;
+    background-color: #f2cef2;
+    height: calc(var(--hauteurBar) - 10em);
+    position: absolute;
+    left: 1.5em;
+}
+
+/*
+
+  .traits{
+    position: fixed;
+    display: flex;
+    margin-left: 2.5vw;
+  }
+  .traits div{
+    margin-right: 20px;
+  }
+  .trait-1{
+    border-left: 3px solid #999187;
+    height: 50vh;
+  }
+  .social-media{
+    align-content: center;
+  }
+  .trait-2{
+    border-left: 3px solid #999187;
+    height: 40vh;
+  }
+  */
+  #haut .scroll{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: right;
+    width: 25%;
+    padding: 20vh;
+  }
+  .scroll{
+    margin-top: 15px;
+  }
+  #text  {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  #text .slide-content p{
+    justify-content: 25px;
+    position: absolute;
+    margin: 40px;
+    width: 30vh;
+  }
+  .slide-content h1{
+    justify-content: left;
+    size: 50vw;
+    margin-top: 40px;
+    font-family: "panthera";
+  }
+  .slide-content h3{
+    
+    justify-content: center;
+    font-family: "beyno";
+    margin: 20px;
+    margin-top: 0;
+    text-align: 3%;
+  }
+
+  #social-titres{
+    display: flex;
+    justify-content:last baseline;
+    text-align: left;
+    position: relative;
+    }
+  /*  La prémiere section de partie header */
+  #wakanda{
+    display: flex;
+    justify-content: center;
+  }
+  #wakanda .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+
+  }
+  #wakanda .act{
+    display: flex;
+    justify-content: space-between;
+  }
+  #wakanda .slide-content{
+    padding: 10px;
+   background-color: #021740;
+ }
+ #wakanda .slide-content .titre{
+  display: flex;
+  justify-content: center;
+  font-family: "beyno";
+  margin: 40px;
+ }
+  #wakanda .titre{
+    display: flex;
+    justify-content: center;
+    font-family: "beyno";
+    margin: 40px;
+  }
+  section h2{
+    display: flex;
+    text-align: justify;
+    font-family: "beyno";
+  }
+
+  .corps-accueil{
+    display: flex;
+  }
+
+  /* Design la section concernant la naissance de prince*/
+  #prince{
+    justify-content: 20%;
+    padding: 0;
+    margin-left: 5%;
+    margin: center;
+    padding: 30vh;
+
+  }
+  #prince .container{ 
+   justify-content: center;
+  }
+  #prince .titre{
+    display: flex;
+    justify-content: left;
+    font-family: "beyno";
+    text-align: center;
+    margin: left;
+    
+  }
+  #prince p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  #birth .venger{
+    display: inline-block;
+    background-color:  #FFFFFF;
+    margin: center;
+   font-size: 10px;
+   justify-content: 20%;
+    margin-left: 5%;
+    width left: 30%;
+    padding: 6vh;
+  }
+  #birth.venger img{
+    display: flex;
+    justify-content: center;
+    width: 200%;
+    margin-top: 80px;
+    text-align: right;
+    padding: 30vh;
+  }
+  /* Design la troisieme section un heros vengeur*/
+  #heros .container{
+    justify-content: center;
+  }
+  #heros .titre{
+    display: flex;
+    justify-content: 80px;
+    font-family: "beyno";
+    text-align: 40vw;
+  }
+  #heros p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: center;
+  }
+  /* Design la troisieme section un heros protecteur*/
+  #heros-justice .titre{
+    display: flex;
+    justify-content: 80px;
+    font-family: "beyno";
+    text-align: 40vw;
+  }
+  #heros-justice p{
+    text-align: 20%;
+    margin-top: 20px;
+  }
+  #heros-justice .protect{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 60vw;
+    text-align: left;
+  }
+  .Box {
+    transform: scale(0.8);
+    flex-shrink: 5;
+    padding-inline: 5em;
+}
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.card-image {
+    z-index: 1000;
+}
+.card-content{
+    transform: scale(1.2) translateY(-10em);
+    background-color: white;
+    font-size: white;
+    border-radius: 15px;
+    padding: 5em;
+}
+.card-body {
+    margin-top: 10em;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h5 {
+    text-align: center;
+    color: black;
+    margin-bottom: 0.5em;
+}
+.btn-Card {
+    background-color: var(--violet);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5em 0.9em;
+    font-size: 10px;
+}
+
+.btn-Card:hover{
+    background-color: white;
+    border: solid 1px #3d2da6;
+    color: #3d2da6;
+}
+
+.info {
+    margin-top: 2em;
+    width: 17em;
+    color: #021740;
+}
+/*++++++++FORMULAIRE ET CONTACT+++++++++++++*/
+#contact {
+  height: 800px;
+  background-image: url(../assets/images/Accueil/Pantherhome4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#contact #contenue_contact {
+  margin-top: 80px;
+  padding: 50px 150px;
+  border-radius: 150px;
+  width: 500px;
+  height: 430px;
+  background: linear-gradient(#fff, #ffffff15);
+}
+
+#contact #contenue_contact div #sous_titre {
+  text-align: center;
+  font-family: Cantarell;
+  font-size: small;
+  color: #021740;
+}
+
+#contact #contenue_contact div #titre {
+  text-align: center;
+  font-family: Cantarell;
+  font-size: 36px;
+  color: #021740;
+}
+
+#contact #contenue_contact #input {
+  display: flex;
+  justify-content: center;
+}
+
+#contact #contenue_contact input {
+  display: block;
+  width: 300px;
+  margin-top: 20px;
+  border: solid 1px #021740;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+}
+
+#contact #contenue_contact input:focus{
+  outline: none;
+}
+
+#contact #contenue_contact input::placeholder {
+  color: #021740;
+  font-size: small;
+}
+
+#contact #contenue_contact #input_message {
+  padding-bottom: 150px;
+}
+
+#contact button {
+  width: 100px;
+  padding: 10px 0px;
+  color: #021740;
+  border-radius: 30px;
+  border: none;
+  background-color: #debbe8f4;
+  box-shadow: 1px 1px 20px #3d2da6;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+#contact button:hover{
+  background-color: white;
+  color: #3d2da6;
+  box-shadow: 1px 1px 20px white;
+}
+
+
+/* responsive*/
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+  background: url(/assets/Plan_footer/back_footer.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#bas-footer{
+  width: 20vw;
+}
+.logo-mrl{
+  width: 50%;
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+}
+
+.wakanadamarvel{
+  position: relative;
+  margin-right: 10vw;
+  width: 23.3vw;
+  height: 53vh;  
+}
+
+
+footer div{
+  margin-right: 10vw;
+}
+
+.media{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-media ul{
+  font-family: Cantarell regular;
+  display: flex;
+  text-align: left;
+}
+
+.footer-media ul li {
+  margin-right: 40px;
+}
+.social-footer h2,.media h2, .media{
+  font-family: Cantarell regular;
+}
+
+.text-footer{
+  display: flex;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+  padding: 20vh;
+  margin: center;
+}
+.social-footers{
+  justify-content: center;
+  line-height: 2px;
+}
+.social-item p{
+justify-content: center;
+margin: 0 auto;
+
+}
+
+
+
+
+
+
+  
+
+
+
