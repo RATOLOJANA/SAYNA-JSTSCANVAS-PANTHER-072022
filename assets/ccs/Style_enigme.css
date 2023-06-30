@@ -61,9 +61,9 @@
     padding: 10vh;
   }
   #enigme .text-corps p{
-    height: 15%;
+    height: 20%;
     position: absolute;
-    padding: 35vh;
+    padding: 40vh;
   }
   .photo-enigme{
     display: flex;
@@ -77,7 +77,7 @@
   font-size: 60px;
    width: 70vw;
    padding: 10vh;
-   text-align: 20 px;
+   text-align: 30px;
     color: #F2CEF2;
   }
   .text-corps{
@@ -89,15 +89,13 @@
   }
   .text-corps .cran{
     justify-content: center;
-    padding: 30px;
-    margin-top: 40%;
-    text-align: 25%;
     width: 10px;
+    margin-top: 15%;
   }
   .text-corps .trans{
     justify-content: center;
     text-align: right;
-    margin-top: 25 px;
+    margin-top: 5%;
     position: absolute;
   }
   /* Design de la deuxieme partie Corps enigme*/
@@ -110,7 +108,7 @@
     justify-content: center;
     font-family: "wakanda";
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     height: 80%;
     font-size: 20px;
     text-align: 25px
@@ -119,9 +117,13 @@
     font-family: 'beyno';
     font-size: 40px;
     list-style-type: none;
-    text-decoration-color: violet;
+    color: #DF99F2;
 
   }
+  .corps-a .slide-enigme span{
+    font-family: 'Canterell';
+  }
+
   .corps-a .slide-enigme p_1 {
     justify-content: center;
     font-family: 'Cantarell';
@@ -130,6 +132,10 @@
     height: 30%;
     font-size: 20px;
     margin: 0 auto;
+  }
+  .corps-a .slide-enigme .bin{
+    font-family: 'Canterell';
+
   }
   .corps-a .slide-enigme p_2 {
     font-family: 'wakanda';
@@ -144,18 +150,19 @@
   }
   .corps-a .text-enigme .transcrit{
     justify-content: center;
+    position: absolute;
     margin-right: 6%;
     width: 60vw;
-    height: 30%;
+    height: 10vh;
     text-align: right 30%;
   }
-  .corps-a .text-enigme .eng {
-    justify-content: justify;
-    width: 60vh;
-    text-align: center;
-    margin-left: 100px;
-    margin-top:-2%;
+  .corps-a .text-enigme .eng{
     
+    justify-content: center;
+    width: 50vh;
+    padding: 200px;
+    text-align: center;
+    margin-left: 90px;
   }
 
 /* Design formulaire enigme*/
@@ -179,15 +186,44 @@
   width: 40vw;
   height: 5vh;
 }
-#Infoline .action input{
-  justify-content: center;
-  margin-left: 25px;
-  text-decoration: #021740;
-  border: 1px solid #021748;
-  background-color: #9E91B7;
+#contact #contenue_contact input {
+  display: block;
+  width: 300px;
+  margin-top: 20px;
+  border: solid 1px #021740;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+}
+
+#contact #contenue_contact input:focus{
+  outline: none;
+}
+
+#contact #contenue_contact input::placeholder {
+  color: #021740;
+  font-size: small;
+}
+#contact #contenue_contact #input_message {
+  padding-bottom: 150px;
+}
+
+#contact button {
+  width: 100px;
+  padding: 10px 0px;
+  color: #021740;
   border-radius: 30px;
-  width: 10vw;
-  height: 5vh;
+  border: none;
+  background-color: #debbe8f4;
+  box-shadow: 1px 1px 20px #3d2da6;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+#contact button:hover{
+  background-color: white;
+  color: #3d2da6;
+  box-shadow: 1px 1px 20px white;
 }
 
 /* Design footer */
@@ -239,4 +275,32 @@ footer div{
 }
 .social-footer h2,.media h2, .media{
   font-family: Cantarell regular;
+}
+.popup-message {
+  position: fixed;
+  width: 80%;
+  height: 30vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20vh;
+  left: 10vw;
+  display: none;
+}
+.popup-message .popup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+  width: 80%;
+  height: 80%;
+  background-color: var(--color-black);
+}
+.popup-message .popup-content span {
+  text-transform: uppercase;
+  font-family: font1;
+  font-size: 5em;
 }

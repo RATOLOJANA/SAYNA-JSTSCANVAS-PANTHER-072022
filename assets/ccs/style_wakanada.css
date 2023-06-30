@@ -19,7 +19,7 @@ body{
 #partie-haut .marvel{
     display: flex;
     justify-content: space-around;
-    text-align: 0;
+    text-align: right 4;
     width: 100vw;
     display: flex;
     margin-top: 40px;
@@ -131,12 +131,14 @@ body{
   font-size: 30px;
  }
   
-  #corps-text .para{
+  #corps-text .para li{
+    list-style-type: none;
     background-color: #3D2DA6;
     color: #FFFFFF;
     justify-content: center;
     font-size: 20px;
-    height: 200px;
+    height: 100px;
+    width: 150%;
   }
 
   .corps-wakanda{
@@ -213,16 +215,6 @@ body{
   }
   /* Design la partie footer*/
 
-  footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 20vh;
-    padding-bottom: 15vh;
-    position: absolute;
-    background: url(/assets/Plan_footer/back_footer.png);
-    background-size: 100% 100%;
-    background-position: center;
-      }
   footer {
     display: flex;
     justify-content: center;
